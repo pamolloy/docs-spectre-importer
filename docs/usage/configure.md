@@ -1,10 +1,10 @@
 # Configure the import
 
-This page contains instructions on how to configure your Spectre / Salt Edge import.
+This page contains instructions on how to configure your Spectre import.
 
 When you start an import you'll be presented with a list of options. Some may be set already because you've used a configuration file.
 
-## Spectre / Salt Edge options
+## Spectre options
 
 ### Accounts
 
@@ -14,7 +14,7 @@ Select the accounts you want to import from. For some accounts, Firefly III will
 
 ### Date range.
 
-Select the date range to import from Spectre / Salt Edge. Duplicate transactions (transactions that have been imported earlier) will not be imported. 
+Select the date range to import from Spectre. Duplicate transactions (transactions that have been imported earlier) will not be imported. 
 
 ### Rules
 
@@ -22,7 +22,7 @@ Select this if you want Firefly III to apply your rules to the import. This may 
 
 ### Map data
 
-Allows you to [map data](https://firefly-iii.gitbook.io/firefly-iii-spectre-importer/importing-data/map) after the transactions have been downloaded.
+Allows you to [map data](./map.md) after the transactions have been downloaded.
 
 ## Other options
 
