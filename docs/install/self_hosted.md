@@ -1,6 +1,6 @@
 # Self hosted
 
-In order to run the Spectre importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP 7.4 and access to the command line. The installation routine for the Spectre importer is basically the same as it is for Firefly III itself.
+In order to run the Spectre importer on your own machine, you'll need a working LAMP, LEMP or WAMP running PHP 7.4 and access to the command line. The installation routine for the Spectre importer is basically the same as it is for Firefly III itself.
 
 If you don't have such a stack search the web to find out how to get one. Make sure you're running PHP 7.4. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
