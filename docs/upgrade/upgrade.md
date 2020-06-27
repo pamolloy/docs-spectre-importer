@@ -1,16 +1,16 @@
 # Upgrade
 
-## Upgrading a self-hosted Spectre / Salt Edge Importer
+## Upgrading a self-hosted Spectre Importer
 
-The best way to upgrade is to "reinstall" the Firefly III Spectre / Salt Edge importer using the following command:
+The best way to upgrade is to "reinstall" the Firefly III Spectre importer using the following command:
 
 ```bash
 composer create-project firefly-iii/spectre-importer --no-dev --prefer-dist updated-spectre-importer <next_version>
 ```
 
-Where `<next_version>` is **[the latest version](https://version.firefly-iii.org/)** of the Firefly III Spectre / Salt Edge importer. This installs the tool in a new directory called `updated-spectre-importer`. 
+Where `<next_version>` is **[the latest version](https://version.firefly-iii.org/)** of the Firefly III Spectre importer. This installs the tool in a new directory called `updated-spectre-importer`. 
 
-Move over your `.env` file by copy-pasting it.
+Move over your `.env` file by copy-pasting it. Then, remove the old directory and rename the new directory.
 
 ## Upgrading a Docker container
 
