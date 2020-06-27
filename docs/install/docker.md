@@ -26,7 +26,7 @@ Here are some tricks to make it easier for yourself:
 
 ### Use pre-defined script
 
-Use [run-hosted.sh](https://raw.githubusercontent.com/firefly-iii/spectre-importer-docker/master/run-hosted.sh) to make it easier to manage your Personal Access Token and Spectre / Salt Edge App ID and secret.
+Use [run-hosted.sh](https://raw.githubusercontent.com/firefly-iii/spectre-importer-docker/main/run-hosted.sh) to make it easier to manage your Personal Access Token and Spectre / Salt Edge App ID and secret.
 
 ### Append "-d"
 
@@ -56,7 +56,7 @@ This can also be made easier for yourself:
 
 ### Use pre-defined script
 
-Use [run-inline.sh](https://github.com/firefly-iii/spectre-importer-docker/blob/master/run-inline.sh) to make it easier to manage your Personal Access Token and Spectre access data.
+Use [run-inline.sh](https://github.com/firefly-iii/spectre-importer-docker/blob/main/run-inline.sh) to make it easier to manage your Personal Access Token and Spectre access data.
 
 ## Docker and IP addresses
 
@@ -103,7 +103,7 @@ docker logs -f $(docker container ls -a -f name=fireflyiii --format="{{.ID}}")
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker container ls -a -f name=fireflyiii --format="{{.ID}}")
 
 # Adapt run-inline.sh and run it using your personal access token and Spectre / Salt Edge App ID and secret
-# You can find it here: https://github.com/firefly-iii/spectre-importer-docker/blob/master/run-inline.sh
+# You can find it here: https://github.com/firefly-iii/spectre-importer-docker/blob/main/run-inline.sh
 
 ./run-inline.sh
 
