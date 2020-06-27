@@ -1,12 +1,12 @@
 # Docker
 
-There are a few ways to use the Spectre / Salt Edge importer with Docker.
+The easiest way to use the Spectre importer is by using the Docker image.
 
-There are some *gotchas* when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
+There are some tricks you need to apply, when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
 
 ## Run as a web server
 
-This is the easiest way to run the Spectre / Salt Edge importer. Simply use the following run command to launch the Spectre / Salt Edge importer.
+This is the easiest way to run the Spectre importer. Simply use the following run command to launch the Spectre importer.
 
 ```bash
 docker run \
@@ -20,7 +20,7 @@ fireflyiii/spectre-importer:develop
 
 ```
 
-By running this script, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the Spectre / Salt Edge API App ID and secret. You can get these on the Salt Edge website.
+By running this script, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the Spectre API App ID and secret. You can get these on the [Spectre website](https://www.saltedge.com/clients/profile/secrets). If necessary you create a new key using the "New API key" button.
 
 Here are some tricks to make it easier for yourself:
 
@@ -34,7 +34,9 @@ Change `docker run` to `docker run -d` to make sure the image runs in the backgr
 
 ## Run inline
 
-This command will launch the Spectre / Salt Edge importer which will then try to import everything from Spectre / Salt Edge based on the config file in `/home/james/spectre_config_file.json`. This is fully automated.
+This is an alternative option.
+
+This command will launch the Spectre importer. It will try to import everything from Spectre based on the configuration file in `/home/james/spectre_config_file.json`. This is fully automated. Check it out:
 
 ```bash
 docker run \
@@ -48,7 +50,7 @@ docker run \
 fireflyiii/spectre-importer:develop
 ```
 
-The advantage of this piece of code is that with a working configuration file, you can automate the import.
+The advantage of this piece of code is that with a working configuration file, you can automate the import. If course, your configuration file may be stored in another location, so change it as necessary. Here too, you need a working Firefly III API key and a Spectre App ID and secret.
 
 This can also be made easier for yourself:
 
@@ -58,19 +60,19 @@ Use [run-inline.sh](https://github.com/firefly-iii/spectre-importer-docker/blob/
 
 ## Docker and IP addresses
 
-If you run the Spectre / Salt Edge importer, the IP address you need to contact Firefly III isn't 127.0.0.1, even when you run Firefly III on the same machine. Docker uses an internal network. There's a good chance your Firefly III installation has an IP address that starts with 172.17. You can find out the internal IP address of Firefly III using this command:
+If you run the Spectre importer through Docker the IP address you need to contact Firefly III is **not** `127.0.0.1`, even when you run Firefly III on the same machine. Docker uses an internal network. There's a good chance your Firefly III installation has an IP address that starts with `172.17`. You can find out the internal IP address of Firefly III using this command:
 
 ```bash
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' CONTAINER
 ```
 
-Instead of `CONTAINER`, use the container ID of your Firefly III installation.
+Instead of `CONTAINER`, use the container ID of your Firefly III container.
 
-If your Firefly III installation is online, you can also use the web address. If you want to, you can generate a Personal Access Token on the [demo site](https://demo.firefly-iii.org/) and use the demo site as a test. Keep in mind that the demo site is public to everybody so everyone will see what you import.
+If your Firefly III installation is online, you can also use the web address. If you want to, you can generate a Personal Access Token on the [demo site](https://demo.firefly-iii.org/) and use the demo site as a test. Keep in mind that the demo site is **public** to everybody so everyone will see what you import.
 
 ### Example scripts for a full setup
 
-The commands below set up a basic MariaDB instance and an installation of Firefly III. It will then start the Spectre / Salt Edge importer. This is just to show you what the relationship is between these different Docker images.
+The commands below set up a basic MariaDB instance and an installation of Firefly III. It will then start the Spectre importer. This is just to show you what the relationship is between these different Docker images.
 
 ```bash
 # run a basic MariaDB instance.
