@@ -13,6 +13,7 @@
 ## Importing data
 
 * [Uploading config](docs/usage/upload.md)
+* [Select connection](docs/usage/select_connection.md)
 * [Configuring your import](docs/usage/configure.md)
 * [Mapping data](docs/usage/map.md)
 * [Importing over command line](docs/usage/command_line.md)
