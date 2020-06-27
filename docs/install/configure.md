@@ -2,7 +2,7 @@
 
 There are four pieces of configuration required for the Firefly III Spectre / Salt Edge import tool:
 
-- A Personal Access Toke
+- A Personal Access Token
 - The URL / IP address of your Firefly III instance
 - Your Spectre / Salt Edge App Secret
 - Your Spectre / Salt Edge App ID
@@ -21,9 +21,9 @@ The Personal Access Token is pretty long. Use a tool like Notepad++ or Visual St
 
 You need to know the IP address or website address of your own Firefly III instances. In many cases this is simply `http://localhost`, but if you're a fancy user it might be something like `https://finances.example.com` or something similar.
 
-## Spectre / Salt Edge data
+## Spectre access data
 
-You can generate an app secret and ID on the Salt Edge website.
+You can generate an app secret and ID on the [Salt Edge website](https://www.saltedge.com/clients/profile/secrets).
 
 ### Localhost and Docker? Be careful!
 
