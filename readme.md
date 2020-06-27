@@ -1,6 +1,8 @@
-# Firefly III Spectre / Salt Edge importer documentation
+# Firefly III Spectre importer documentation
 
-This repository contains the original markdown files that make up the documentation for the Firefly III Spectre / Salt Edge importer tool
+Welcome to the GitHub repository of the documentation of the Firefly III Spectre import tool.
+
+This repository contains the original markdown files that make up the documentation for the Firefly III Spectre importer tool
 
 You can find the documentation [on Gitbooks](https://firefly-iii.gitbook.io/firefly-iii-spectre-importer/). 
 
