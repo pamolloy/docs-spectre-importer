@@ -23,7 +23,7 @@ You need to know the IP address or website address of your own Firefly III insta
 
 ## Spectre access data
 
-You can generate an app secret and ID on the [Salt Edge website](https://www.saltedge.com/clients/profile/secrets).
+You can generate an app secret and ID on the [Salt Edge website](https://www.saltedge.com/clients/profile/secrets). Make sure you generate a **service key**, not an app key.
 
 ### Localhost and Docker? Be careful!
 
@@ -36,3 +36,5 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' CON
 ```
 
 Instead of `CONTAINER`, use the container ID of your Firefly III installation.
+
+**Remember**, by default Firefly III runs on port 8080.

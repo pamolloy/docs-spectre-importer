@@ -70,6 +70,8 @@ Instead of `CONTAINER`, use the container ID of your Firefly III container.
 
 If your Firefly III installation is online, you can also use the web address. If you want to, you can generate a Personal Access Token on the [demo site](https://demo.firefly-iii.org/) and use the demo site as a test. Keep in mind that the demo site is **public** to everybody so everyone will see what you import.
 
+**Remember**, by default Firefly III runs on port 8080.
+
 ### Example scripts for a full setup
 
 The commands below set up a basic MariaDB instance and an installation of Firefly III. It will then start the Spectre importer. This is just to show you what the relationship is between these different Docker images.
@@ -108,3 +110,5 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(d
 ./run-inline.sh
 
 ```
+
+**Remember**, by default Firefly III runs on port 8080.
