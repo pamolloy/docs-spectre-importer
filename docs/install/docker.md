@@ -20,7 +20,7 @@ fireflyiii/spectre-importer:develop
 
 ```
 
-By running this script, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the Spectre API App ID and secret. You can get these on the [Spectre website](https://www.saltedge.com/clients/profile/secrets). If necessary you create a new key using the "New API key" button.
+By running this script, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the Spectre API App ID and secret. You can get these on the [Spectre website](https://www.saltedge.com/clients/profile/secrets). If necessary you create a new key using the "New API key" button. Select "Service" as the type.
 
 Here are some tricks to make it easier for yourself:
 

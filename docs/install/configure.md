@@ -4,7 +4,7 @@ There are four pieces of configuration required for the Firefly III Spectre / Sa
 
 - A Personal Access Token
 - The URL / IP address of your Firefly III instance
-- Your Spectre / Salt Edge App Secret
+- Your Spectre / Salt Edge App Secret (select "Service" as the type)
 - Your Spectre / Salt Edge App ID
 
 ## Configuration location
