@@ -15,7 +15,7 @@ docker run \
 -e FIREFLY_III_URI= \
 -e SPECTRE_APP_ID= \
 -e SPECTRE_SECRET= \
--p 8081:80 \
+-p 8081:8080 \
 fireflyiii/spectre-importer:develop
 
 ```
@@ -88,7 +88,7 @@ docker run -d \
 --name fireflyiii \
 -v firefly_iii_export:/var/www/firefly-iii/storage/export \
 -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
--p 80:80 \
+-p 80:8080 \
 -e APP_KEY=123456789012345678901234567890aa \
 -e DB_HOST=172.17.0.2 \
 -e DB_CONNECTION=mysql \
