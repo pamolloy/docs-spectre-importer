@@ -9,7 +9,7 @@ There are four pieces of configuration required for the Firefly III Spectre / Sa
 
 ## Configuration location
 
-The Firefly III URL and the Personal Access Token are stored in two environment variables, `FIREFLY_III_URI` and `FIREFLY_III_ACCESS_TOKEN` respectively. You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. Check out the installation page for more information.
+The Firefly III URL and the Personal Access Token are stored in two environment variables, `FIREFLY_III_URL` and `FIREFLY_III_ACCESS_TOKEN` respectively. You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. Check out the installation page for more information.
 
 ## Personal Access Token
 

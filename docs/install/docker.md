@@ -12,11 +12,11 @@ This is the easiest way to run the Spectre importer. Simply use the following ru
 docker run \
 --rm \
 -e FIREFLY_III_ACCESS_TOKEN= \
--e FIREFLY_III_URI= \
+-e FIREFLY_III_URL= \
 -e SPECTRE_APP_ID= \
 -e SPECTRE_SECRET= \
 -p 8081:8080 \
-fireflyiii/spectre-importer:develop
+fireflyiii/spectre-importer:latest
 
 ```
 
@@ -43,11 +43,11 @@ docker run \
 --rm \
 -v /home/james/spectre_config_file.json:/import/spectre.json \
 -e FIREFLY_III_ACCESS_TOKEN= \
--e FIREFLY_III_URI= \
+-e FIREFLY_III_URL= \
 -e SPECTRE_APP_ID= \
 -e SPECTRE_SECRET= \
 -e WEB_SERVER=false \
-fireflyiii/spectre-importer:develop
+fireflyiii/spectre-importer:latest
 ```
 
 The advantage of this piece of code is that with a working configuration file, you can automate the import. If course, your configuration file may be stored in another location, so change it as necessary. Here too, you need a working Firefly III API key and a Spectre App ID and secret.
